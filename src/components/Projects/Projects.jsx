@@ -1,11 +1,14 @@
-import React, { useContext } from 'react';
 import styles from './Projects.module.css';
-import { useState } from 'react';
-import { ProjectContext } from '../../context/ProjectContext';
+import { useState, useEffect } from 'react';
+import ProjectService from '../../services/ProjectService';
 
 const Projects = () => {
 
-    const projects = useContext(ProjectContext);
+    const [projects, setProjects] = useState(ProjectService.getProjects);
+
+    useEffect(() => {
+        setProjects(ProjectService.getProjects());
+    }, []);
 
     const [toggledDescription, setToggledDescription] = useState({});
 

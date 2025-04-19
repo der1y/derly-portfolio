@@ -3,7 +3,6 @@
     flex-direction: row;
     justify-content: center;
     gap: 5rem;
-    
 }
 
 .logo {
@@ -34,6 +33,10 @@
 .leftAlign {
     display: flex;
     justify-content: center;
-    /* text-align: left; */
     font-size: 4rem;
+    margin: 0;
+}
+
+p:last-child {
+    margin-top: 0;
 }
