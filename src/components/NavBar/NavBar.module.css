@@ -1,0 +1,12 @@
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

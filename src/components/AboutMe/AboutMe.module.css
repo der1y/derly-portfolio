@@ -1,0 +1,39 @@
+.aboutMe {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+    
+}
+
+.logo {
+    height: 400px;
+    width: 400px;
+    padding: 1.5em;
+    object-fit: cover;
+    object-position: 50% 70%;
+    will-change: filter;
+    transition: filter 300ms;
+}
+
+.logo:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.description {
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.leftAlign {
+    display: flex;
+    justify-content: center;
+    /* text-align: left; */
+    font-size: 4rem;
+}
