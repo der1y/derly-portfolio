@@ -14,7 +14,7 @@ export default function NavBar() {
         <div className={styles.header}>
             <div> Derly Jordan Aguirre</div>
             <nav className={styles.nav}>
-                <button type="button" onClick={handleOpen}> Resumé </button>
+                <button className={styles.resume} type="button" onClick={handleOpen}> Resumé </button>
                 <a className={styles.greenText} href="https://www.linkedin.com/in/derlyjordan/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                 <a className={styles.greenText} href="https://github.com/der1y" target="_blank" rel="noopener noreferrer">GitHub</a>
                 <a href="mailto:derlyaguirre1@gmail.com">

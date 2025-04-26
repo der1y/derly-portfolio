@@ -20,3 +20,9 @@
 .greenText {
     color: #61612D;
 }
+
+.resume {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 1.5px;
+}
