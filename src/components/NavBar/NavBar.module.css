@@ -9,4 +9,14 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 30px;
+}
+
+.getInTouch {
+    background-color: #8b2c14;
+    color: #fdefc9;
+}
+
+.greenText {
+    color: #61612D;
 }

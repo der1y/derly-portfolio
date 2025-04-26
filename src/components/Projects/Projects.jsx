@@ -1,6 +1,8 @@
 import styles from './Projects.module.css';
 import { useState, useEffect } from 'react';
 import ProjectService from '../../services/ProjectService';
+import cocktailProject from '../../assets/cocktail_project.png';
+import pokemonProject from '../../assets/pokemon_project.png';
 
 const Projects = () => {
 
@@ -21,8 +23,12 @@ const Projects = () => {
 
     return (
         <section className={styles.projects}>
-            <div>
+            <div className={styles.titleContainer}>
                 <h2 className={styles.projectTitle}>Projects</h2>
+                <div className={styles.projectImages}>
+                    <img src={cocktailProject} alt="Projects" className={styles.cocktailProjectImage} />
+                    <img src={pokemonProject} alt="Projects" className={styles.pokemonProjectImage} />
+                </div>
             </div>
             <div className={styles.projectList}>
                 {projects.length === 0 && <p>No projects available</p>}
@@ -42,9 +48,9 @@ const Projects = () => {
                                     ))}
                                 </ul>
 
-                                <a href={project.link} target="_blank" rel="noopener noreferrer">
+                                {/* <a href={project.link} target="_blank" rel="noopener noreferrer">
                                     View Project
-                                </a>
+                                </a> */}
                             </div>
                         )}
                     </div>

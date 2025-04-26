@@ -4,14 +4,23 @@
     font-size: 7rem;
     max-height: min-content;
     rotate: 180deg;
+    color: #fdefc9;
 }
 
 .projects {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 1rem;
+    background-color: #61612D;
+    padding: 2rem;
+    margin: 0;
+    padding: 20px 0px;
+    color: #fdefc9;
+    width: 100vw;
+    box-sizing: border-box;
+    /* flex-wrap: wrap; */
 }
 
 .projectCard {
@@ -25,12 +34,21 @@
     gap: 15rem;
 }
 
+/* .projectImages {
+    display: flex;
+    align-items: center;
+} */
+
+h3 {
+    color: #fdefc9;
+}
+
 .projectCard:hover {
     cursor: pointer;
 }
 
 .projectContainer:not(:last-child) {
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #fdefc9;
 }
 
 .projectContainer {
@@ -40,5 +58,65 @@
 }
 
 .projectList {
-    width: 40%;
+    width: 35%;
+}
+
+.titleContainer {
+    display: flex;
+
+}
+
+.pokemonProjectImage {
+    height: 250px;
+    position: absolute;
+    top: 690px;
+    left: 480px;
+
+}
+
+.cocktailProjectImage {
+    position: absolute;
+    top: 790px;
+    left: 580px;
+    height: 250px;
+    object-fit: cover;
+    object-position: 50% 70%;
+    z-index: 1;
+
+}
+
+@media screen and (max-width: 768px) {
+    .projects {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        width: 100%;
+    }
+
+    .projectCard {
+        /* flex-direction: column; */
+        align-items: center;
+        gap: 1rem;
+        padding: 0px;
+    }
+
+    .projectImages {
+        display: none;
+    }
+
+    .projectList {
+        width: 100vw;
+    }
+
+    .projectContainer {
+        width: 100vw;
+    }
+
+    .projectTitle {
+        font-size: 3rem;
+        writing-mode: horizontal-tb;
+        rotate: 0deg;
+        margin: 0;
+    }
+
 }
