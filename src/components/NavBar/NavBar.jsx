@@ -12,6 +12,7 @@ export default function NavBar() {
 
     return (
         <div className={styles.header}>
+            <title>Derly's Portfolio</title>
             <div> Derly Jordan Aguirre</div>
             <nav className={styles.nav}>
                 <button className={styles.resume} type="button" onClick={handleOpen}> Resumé </button>
